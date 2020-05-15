@@ -1,0 +1,32 @@
+body {background-color: #ffffff}
+
+.hidden {
+    visibility: hidden
+}
+
+.logout-btn:hover{
+    background: #c0392b;
+    color : white;
+}
+
+
+
+/*---- GOOGLE LOGIN BUTTON ----*/
+.login-btn {
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    content:url("../img/google_login/focus.png");
+}
+
+.login-btn:active {
+    content:url("../img/google_login/pressed.png");
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #000000;
+}

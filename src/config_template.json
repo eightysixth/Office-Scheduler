@@ -1,0 +1,72 @@
+{
+    "env":{
+        "mode":"PROD"
+    },
+    "strings":{
+        "app_name": "ISSS_Login_App",
+        "window_title":"ISSS Login",
+        "center_header": "Office Hours Login",
+        "window_bkg_colour":"#2e2c29",
+        "domain":"ualberta.ca"
+    },
+    "res":{
+        "icon_path":"/img/icon.png",
+        "bkg_path":"/img/logo_background.png"
+    },
+    "oauth_config":{
+        "domain_lock": false,
+        "access_type":"offline",
+        "scope":"https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile",
+        "hd":"ualberta.ca",
+
+        "clientId": "__FILL_THIS__",
+        "clientSecret":"__FILL_THIS__",
+        "redirectUri": "http://localhost:3000/oauth2callback",
+        "user_info_url": "https://www.googleapis.com/oauth2/v2/userinfo?fields=email%2Cfamily_name%2Cgender%2Cgiven_name%2Chd%2Cid%2Clink%2Clocale%2Cname%2Cpicture"
+    },
+    "calendar_oauth":{  "client_id":"__FILL_THIS__",
+                        "project_id":"__FILL_THIS__",
+                        "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+                        "token_uri":"https://oauth2.googleapis.com/token",
+                        "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+                        "client_secret":"__FILL_THIS__",
+                        "redirect_uris":["__FILL_THIS__","http://localhost"],
+                        "scopes": ["https://www.googleapis.com/auth/calendar.events"]
+                        },
+    "service_account":{
+        "type": "service_account",
+        "project_id": "__FILL_THIS__",
+        "private_key_id": "__FILL_THIS__",
+        "private_key": "-----BEGIN PRIVATE KEY-----__FILL_THIS__\n-----END PRIVATE KEY-----\n",
+        "client_email": "__FILL_THIS__",
+        "client_id": "__FILL_THIS__",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "__FILL_THIS__"
+      } ,
+    "calendar":{
+        "name":"Office Hours Calendar",
+        "google_calendar_schedule_id": "__FILL_THIS__",
+        "google_events_calendar_id": "__FILL_THIS__",
+        "google_calendar_api_key": "__FILL_THIS__",
+        "calendar_default_view":{
+            "type":"timeGrid",
+            "duration":{"days":6},
+            "buttonText": "Week",
+            "weekends": false,
+            "allDaySlot":false,
+            "minTime": "09:00:00",
+            "maxTime": "17:00:00"
+        }
+    },
+    "events":{
+        "tolerance_minutes": 10,
+        "timeZoneAbbreviation": "MDT",
+        "timeZone": "America/Edmonton",
+        "duration_hours": 1
+    },
+    "about":{
+        "version":1
+    }
+}

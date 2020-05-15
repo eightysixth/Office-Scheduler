@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>ISSS Office Hours Login</title>
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/front_page.css">
+    </head>
+    <body>
+
+      <div class="container">
+        <img class="logo" src="../img/logo_background.png">
+      </div>
+
+      <div class="container pt-5 pb-0">
+        <h1 id="center-header01" class="jumbotron-heading text-center">Office Hours Login</h1>
+        <p id="signin-tagline-lbl"class="text-center">
+          Sign in using your <b>@gmail.com</b> account.
+        </p>
+      </div>
+
+      <div class="container pl-0 py-0">
+        <!-- <img srwac="./public/img/google_login/normal.png"> -->
+        <p class="text-center">
+          <img class="login-btn" src="../img/google_login/normal.png" onclick="promptLogIn()">
+        </p>
+      </div>
+
+     
+      <div class="container px-0 py-0" id="login-alert-container">
+          <div id="login-alert" class="alert alert-danger hidden" role="alert">
+              <img id="user-img"class="img-circle" width="32" height="32" src="">
+              Please sign in using a <i>@gmail.com</i> account
+          </div>
+        </div>
+
+      <!-- <div class="container pull-down"> -->
+      <div id="footer" class="container"></div>
+        <!-- <b> hello</b> -->
+        <!-- <button type="button" class="btn btn-light sm float-left" onclick="getAbout()">!</button> -->
+        <button type="button" class="btn btn-light float-right logout-btn" onclick="logout()"><b>Logout</b></button>
+        <button type="button" class="btn btn-light float-right pr-20" onclick="getSchedule()">View Schedule</button>
+      </div>      
+    </body>
+    
+    
+    <script src="../js/public/bootstrap.min.js"></script>
+    <script src="../js/public//front_page.js"></script>
+  </html>
+
+  

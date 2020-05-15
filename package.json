@@ -1,0 +1,24 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "Tracks scheduled users' logins",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "win": "electron-builder -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {"electron": "^6.1.4", "electron-builder": "^21.2.0"},
+  "dependencies": {
+    "google-auth-library": "^5.5.1",
+    "googleapis": "^45.0.0",
+    "nedb": "^1.8.0"
+  },
+  "build":{
+    "win":{
+
+    }
+  }
+}
